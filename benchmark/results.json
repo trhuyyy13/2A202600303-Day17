@@ -1,0 +1,72 @@
+[
+  {
+    "id": "case_01",
+    "scenario": "Recall user name after several turns",
+    "no_memory": "Xin lỗi, nhưng tôi không biết tên của bạn. Bạn có thể cho tôi biết tên của bạn không?",
+    "with_memory": "Tên bạn là Huy.",
+    "pass": true
+  },
+  {
+    "id": "case_02",
+    "scenario": "Preference recall",
+    "no_memory": "Dưới đây là một số framework backend đơn giản mà bạn có thể tham khảo:\n\n1. **Flask** (Python): Flask là một micro-framework nhẹ và dễ sử dụng, rất phù hợp cho các dự án nhỏ và vừa. Nó cho phép bạn xây dựng ứng dụng web nhanh chóng với ít cấu hình.\n\n2. **Express.js** (Node.js): Express là một framework web phổ biến cho Node.js, giúp bạn xây dựng ứng dụng và API một cách nhanh chóng và dễ dàng. Nó có nhiều middleware hỗ trợ.\n\n3. **Django** (Python): Mặc dù Django là một framework lớn hơn, nhưng nó cũng có thể được sử dụng cho các dự án nhỏ nhờ vào tính năng \"Django Admin\" và các công cụ tích hợp sẵn.\n\n4. **Ruby on Rails** (Ruby): Rails là một framework mạnh mẽ cho Ruby, giúp phát triển ứng dụng web nhanh chóng với nhiều tính năng tích hợp.\n\n5. **Spring Boot** (Java): Spring Boot giúp đơn giản hóa việc phát triển ứng dụng Java, cho phép bạn tạo ra các ứng dụng độc lập và dễ triển khai.\n\n6. **FastAPI** (Python): FastAPI là một framework hiện đại cho Python, rất nhanh và dễ sử dụng, đặc biệt cho việc xây dựng API.\n\nBạn có thể chọn framework phù hợp với ngôn ngữ lập trình mà bạn quen thuộc và yêu cầu của dự án của mình.",
+    "with_memory": "Một số framework backend đơn giản và phổ biến cho Python mà bạn có thể xem xét là:\n\n1. **Flask**: Đây là một micro-framework rất nhẹ và dễ sử dụng. Flask cho phép bạn xây dựng ứng dụng web nhanh chóng với ít cấu hình hơn. Nó rất linh hoạt và có thể mở rộng dễ dàng.\n\n2. **FastAPI**: Đây là một framework hiện đại cho việc xây dựng API với Python 3.6+ dựa trên tiêu chuẩn OpenAPI. FastAPI rất nhanh và hỗ trợ tự động tạo tài liệu API.\n\n3. **Django**: Mặc dù Django là một framework lớn hơn, nó cung cấp nhiều tính năng tích hợp sẵn và có thể giúp bạn phát triển ứng dụng web một cách nhanh chóng. Nếu bạn cần một ứng dụng phức tạp hơn, Django có thể là lựa chọn tốt.\n\nNếu bạn cần thêm thông tin hoặc ví dụ cụ thể về cách sử dụng một trong các framework này, hãy cho tôi biết!",
+    "pass": true
+  },
+  {
+    "id": "case_03",
+    "scenario": "Allergy conflict update",
+    "no_memory": "Để đưa ra lời khuyên chính xác về thực phẩm cần tránh, tôi cần biết thêm thông tin về tình trạng sức khỏe, dị ứng hoặc mục tiêu dinh dưỡng của bạn. Tuy nhiên, dưới đây là một số loại thực phẩm mà nhiều người thường cần tránh hoặc hạn chế:\n\n1. **Thực phẩm chế biến sẵn**: Chứa nhiều đường, muối và chất bảo quản.\n2. **Đường tinh luyện**: Có thể gây tăng cân và các vấn đề sức khỏe khác.\n3. **Chất béo bão hòa và chất béo trans**: Có trong thực phẩm chiên, đồ ăn nhanh và một số loại bánh kẹo.\n4. **Thực phẩm chứa gluten**: Nếu bạn bị bệnh celiac hoặc nhạy cảm với gluten.\n5. **Sữa và sản phẩm từ sữa**: Nếu bạn không dung nạp lactose hoặc có dị ứng với sữa.\n6. **Thực phẩm giàu natri**: Như đồ ăn đóng hộp, có thể gây tăng huyết áp.\n\nNếu bạn có một tình trạng sức khỏe cụ thể hoặc mục tiêu dinh dưỡng, hãy cho tôi biết để tôi có thể cung cấp thông tin chi tiết hơn!",
+    "with_memory": "Nếu bạn dị ứng với đậu nành, bạn nên tránh tất cả các sản phẩm chứa đậu nành, bao gồm sữa đậu nành, đậu phụ, và các sản phẩm chế biến từ đậu nành khác. Ngoài ra, hãy kiểm tra nhãn sản phẩm để đảm bảo không có thành phần nào từ đậu nành. Nếu bạn cần thêm thông tin về cách quản lý dị ứng hoặc tìm kiếm sản phẩm thay thế, hãy cho tôi biết!",
+    "pass": true
+  },
+  {
+    "id": "case_04",
+    "scenario": "Episodic recall docker lesson",
+    "no_memory": "Để xác định nguyên nhân lỗi Docker của bạn, tôi cần thêm thông tin cụ thể về lỗi mà bạn đã gặp phải. Bạn có thể cung cấp thông báo lỗi hoặc mô tả tình huống khi lỗi xảy ra không?",
+    "with_memory": "Lỗi Docker của bạn lần trước là do bạn gọi localhost trong container. Khi bạn làm điều này, container không thể truy cập vào dịch vụ đang chạy trên máy chủ của bạn. Thay vào đó, bạn nên sử dụng địa chỉ IP của máy chủ hoặc tên mạng của dịch vụ trong Docker.",
+    "pass": true
+  },
+  {
+    "id": "case_05",
+    "scenario": "Semantic retrieval async and Celery",
+    "no_memory": "Background job và non-blocking request đều liên quan đến việc xử lý tác vụ mà không làm gián đoạn trải nghiệm người dùng, nhưng chúng có những điểm khác nhau cơ bản:\n\n1. **Background Job**:\n   - Là một tác vụ được thực hiện ở phía máy chủ mà không cần sự tương tác trực tiếp từ người dùng.\n   - Thường được sử dụng cho các công việc tốn thời gian như xử lý dữ liệu, gửi email, hoặc thực hiện các tác vụ định kỳ.\n   - Người dùng có thể không nhận được phản hồi ngay lập tức và thường không biết khi nào công việc sẽ hoàn thành. Kết quả có thể được thông báo sau đó qua email hoặc thông báo trong ứng dụng.\n\n2. **Non-blocking Request**:\n   - Là một yêu cầu mà không làm tắc nghẽn luồng chính của ứng dụng, cho phép người dùng tiếp tục tương tác với ứng dụng trong khi chờ đợi phản hồi từ máy chủ.\n   - Thường được sử dụng trong các ứng dụng web để cải thiện trải nghiệm người dùng, ví dụ như khi tải dữ liệu từ máy chủ mà không làm mới trang.\n   - Người dùng có thể thấy một thông báo tải hoặc một phần giao diện cập nhật khi dữ liệu được trả về.\n\nTóm lại, background job thường là các tác vụ chạy ở phía máy chủ mà không cần sự tương tác ngay lập tức từ người dùng, trong khi non-blocking request là cách thức gửi yêu cầu mà không làm gián đoạn trải nghiệm người dùng trong ứng dụng.",
+    "with_memory": "Vì bạn từng rối async/await và Celery: async/await giúp xử lý I/O không blocking trong request, còn Celery dùng cho background job chạy tách khỏi request lifecycle, có queue và retry.",
+    "pass": true
+  },
+  {
+    "id": "case_06",
+    "scenario": "Learning style profile",
+    "no_memory": "RabbitMQ là một hệ thống quản lý hàng đợi tin nhắn (message broker) mã nguồn mở, được viết bằng ngôn ngữ Erlang. Nó cho phép các ứng dụng giao tiếp với nhau thông qua việc gửi và nhận tin nhắn, giúp tách biệt các thành phần của ứng dụng và cải thiện khả năng mở rộng cũng như tính linh hoạt.\n\nDưới đây là một số điểm chính về RabbitMQ:\n\n1. **Hàng đợi tin nhắn**: RabbitMQ sử dụng hàng đợi để lưu trữ tin nhắn cho đến khi chúng được xử lý. Điều này cho phép các ứng dụng gửi và nhận tin nhắn mà không cần phải kết nối trực tiếp với nhau.\n\n2. **Mô hình xuất bản - đăng ký (Publish-Subscribe)**: RabbitMQ hỗ trợ mô hình này, cho phép một nhà xuất bản gửi tin nhắn đến nhiều người đăng ký cùng một lúc.\n\n3. **Đảm bảo độ tin cậy**: RabbitMQ cung cấp các tính năng như xác nhận tin nhắn (message acknowledgment) và lưu trữ tin nhắn (message persistence) để đảm bảo rằng tin nhắn không bị mất trong quá trình truyền tải.\n\n4. **Khả năng mở rộng**: RabbitMQ có thể được cấu hình để chạy trên nhiều máy chủ, cho phép mở rộng quy mô dễ dàng khi cần thiết.\n\n5. **Hỗ trợ nhiều giao thức**: Mặc dù RabbitMQ chủ yếu sử dụng giao thức AMQP (Advanced Message Queuing Protocol), nó cũng hỗ trợ nhiều giao thức khác như MQTT và STOMP.\n\n6. **Quản lý và giám sát**: RabbitMQ cung cấp giao diện quản lý web cho phép người dùng theo dõi và quản lý các hàng đợi, người tiêu dùng và các thông số khác.\n\nRabbitMQ thường được sử dụng trong các ứng dụng phân tán, microservices, và các hệ thống cần xử lý tin nhắn theo cách không đồng bộ.",
+    "with_memory": "Tóm tắt ngắn: RabbitMQ là một hệ thống quản lý hàng đợi tin nhắn (message broker) mã nguồn mở, cho phép các ứng dụng giao tiếp với nhau thông qua việc gửi và nhận tin nhắn.",
+    "pass": true
+  },
+  {
+    "id": "case_07",
+    "scenario": "Current query overrides memory",
+    "no_memory": "Một số framework backend phổ biến trong Java mà bạn có thể sử dụng bao gồm:\n\n1. **Spring Boot**: Đây là một trong những framework phổ biến nhất cho phát triển ứng dụng Java. Nó giúp bạn xây dựng ứng dụng nhanh chóng với cấu hình tối thiểu và hỗ trợ nhiều tính năng như RESTful API, bảo mật, và kết nối cơ sở dữ liệu.\n\n2. **Java EE (Jakarta EE)**: Đây là một nền tảng tiêu chuẩn cho phát triển ứng dụng doanh nghiệp. Nó cung cấp nhiều API và công nghệ như Servlets, JSP, EJB, và JPA.\n\n3. **Micronaut**: Là một framework hiện đại, nhẹ, được thiết kế cho microservices. Nó hỗ trợ lập trình phản ứng và có thời gian khởi động nhanh.\n\n4. **Quarkus**: Được tối ưu hóa cho môi trường cloud và container, Quarkus hỗ trợ lập trình phản ứng và có khả năng khởi động nhanh, rất phù hợp cho các ứng dụng microservices.\n\n5. **Dropwizard**: Là một framework nhẹ, kết hợp nhiều thư viện tốt nhất để xây dựng ứng dụng web nhanh chóng và hiệu quả.\n\nBạn có thể chọn một trong những framework này tùy thuộc vào yêu cầu và sở thích của dự án của bạn.",
+    "with_memory": "Nếu bạn phải sử dụng Java cho dự án backend của mình, có một số framework phổ biến mà bạn có thể xem xét:\n\n1. **Spring Boot**: Đây là một trong những framework phổ biến nhất cho phát triển ứng dụng Java. Nó giúp bạn xây dựng các ứng dụng độc lập và dễ dàng triển khai. Spring Boot cung cấp nhiều tính năng như cấu hình tự động, tích hợp với cơ sở dữ liệu, và hỗ trợ RESTful API.\n\n2. **Jakarta EE (trước đây là Java EE)**: Đây là một nền tảng mạnh mẽ cho phát triển ứng dụng doanh nghiệp. Jakarta EE cung cấp nhiều API và công nghệ cho phát triển ứng dụng web, dịch vụ web, và nhiều hơn nữa.\n\n3. **Micronaut**: Đây là một framework hiện đại, nhẹ và nhanh, được thiết kế cho microservices. Micronaut hỗ trợ lập trình phản ứng và có khả năng khởi động nhanh.\n\n4. **Quarkus**: Đây là một framework mới nổi, tối ưu hóa cho Kubernetes và cloud-native. Quarkus hỗ trợ lập trình phản ứng và có khả năng khởi động rất nhanh.\n\n5. **Play Framework**: Đây là một framework cho phát triển ứng dụng web, hỗ trợ lập trình bất đồng bộ và có thể sử dụng với Scala hoặc Java.\n\nTùy thuộc vào yêu cầu cụ thể của dự án, bạn có thể chọn framework phù hợp nhất. Nếu bạn cần thêm thông tin về một framework cụ thể, hãy cho tôi biết!",
+    "pass": true
+  },
+  {
+    "id": "case_08",
+    "scenario": "Forget and delete memory",
+    "no_memory": "Xin lỗi, nhưng tôi không biết tên của bạn. Bạn có thể cho tôi biết tên của bạn không?",
+    "with_memory": "Xin lỗi, nhưng tôi không biết tên của bạn. Bạn có thể cho tôi biết tên của bạn không?",
+    "pass": true
+  },
+  {
+    "id": "case_09",
+    "scenario": "Trim context with important preference retention",
+    "no_memory": "Tôi không biết bạn thích ngôn ngữ nào, nhưng bạn có thể cho tôi biết về sở thích của bạn để tôi có thể giúp đỡ tốt hơn!",
+    "with_memory": "Bạn thích ngôn ngữ Python! Nếu bạn cần hỗ trợ hoặc có câu hỏi nào liên quan đến Python hoặc các dự án của bạn, hãy cho tôi biết nhé!",
+    "pass": true
+  },
+  {
+    "id": "case_10",
+    "scenario": "Semantic FAQ retrieval docker compose host",
+    "no_memory": "Trong container, để gọi đến database, bạn thường sử dụng tên của service hoặc container mà database đang chạy. Nếu bạn đang sử dụng Docker Compose, bạn có thể sử dụng tên service được định nghĩa trong file `docker-compose.yml` làm host.\n\nVí dụ, nếu bạn có một service database được định nghĩa như sau:\n\n```yaml\nservices:\n  db:\n    image: postgres\n```\n\nThì trong ứng dụng của bạn, bạn có thể kết nối đến database bằng cách sử dụng `db` làm host.\n\nNếu bạn không sử dụng Docker Compose, bạn có thể sử dụng địa chỉ IP của container database hoặc `localhost` nếu ứng dụng và database đang chạy trong cùng một container. Tuy nhiên, cách tốt nhất là sử dụng tên service để đảm bảo tính linh hoạt và dễ bảo trì.",
+    "with_memory": "Trong container, để gọi đến database, bạn thường sử dụng tên của service hoặc container mà database đang chạy. Nếu bạn đang sử dụng Docker Compose, bạn có thể sử dụng tên service được định nghĩa trong file `docker-compose.yml` làm host. Ví dụ, nếu bạn có một service database được gọi là `db`, bạn có thể kết nối đến database bằng cách sử dụng `db` làm host.\n\nNếu bạn không sử dụng Docker Compose, bạn có thể cần sử dụng địa chỉ IP của container hoặc tên máy chủ (hostname) của máy chủ mà container đang chạy. Hãy chắc chắn rằng các cổng cần thiết đã được mở và cấu hình đúng để cho phép kết nối từ container đến database.",
+    "pass": true
+  }
+]

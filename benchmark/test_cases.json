@@ -1,0 +1,126 @@
+[
+  {
+    "id": "case_01",
+    "scenario": "Recall user name after several turns",
+    "turns": [
+      {"session": 1, "user": "Tên tôi là Huy."},
+      {"session": 1, "user": "Giải thích FastAPI là gì."},
+      {"session": 1, "user": "Redis dùng để làm gì?"},
+      {"session": 2, "user": "Tôi tên gì?"}
+    ],
+    "checks": {
+      "with_memory_contains": ["Huy"],
+      "no_memory_contains": ["chưa có thông tin"]
+    }
+  },
+  {
+    "id": "case_02",
+    "scenario": "Preference recall",
+    "turns": [
+      {"session": 1, "user": "Tôi thích Python, không thích Java."},
+      {"session": 2, "user": "Gợi ý framework backend đơn giản."}
+    ],
+    "checks": {
+      "with_memory_contains": ["FastAPI", "Flask"],
+      "no_memory_contains": ["FastAPI", "Flask"]
+    }
+  },
+  {
+    "id": "case_03",
+    "scenario": "Allergy conflict update",
+    "turns": [
+      {"session": 1, "user": "Tôi dị ứng sữa bò."},
+      {"session": 1, "user": "À nhầm, tôi dị ứng đậu nành chứ không phải sữa bò."},
+      {"session": 2, "user": "Tôi cần tránh thực phẩm gì?"}
+    ],
+    "checks": {
+      "with_memory_contains": ["đậu nành"],
+      "no_memory_contains": ["chưa có thông tin"]
+    }
+  },
+  {
+    "id": "case_04",
+    "scenario": "Episodic recall docker lesson",
+    "turns": [
+      {"session": 1, "user": "Tôi bị lỗi Docker vì gọi localhost trong container."},
+      {"session": 2, "user": "Lần trước lỗi Docker của tôi là do gì?"}
+    ],
+    "checks": {
+      "with_memory_contains": ["docker", "localhost"],
+      "no_memory_contains": ["chưa có dữ liệu"]
+    }
+  },
+  {
+    "id": "case_05",
+    "scenario": "Semantic retrieval async and Celery",
+    "turns": [
+      {"session": 1, "user": "Tôi bị rối giữa async/await và Celery."},
+      {"session": 2, "user": "Background job khác gì non-blocking request?"}
+    ],
+    "checks": {
+      "with_memory_contains": ["async", "Celery"],
+      "no_memory_contains": ["Background job"]
+    }
+  },
+  {
+    "id": "case_06",
+    "scenario": "Learning style profile",
+    "turns": [
+      {"session": 1, "user": "Tôi thích giải thích ngắn gọn, có ví dụ code."},
+      {"session": 1, "user": "Giải thích RabbitMQ."}
+    ],
+    "checks": {
+      "with_memory_contains": ["Tóm tắt"],
+      "no_memory_contains": ["Mình đã hiểu"]
+    }
+  },
+  {
+    "id": "case_07",
+    "scenario": "Current query overrides memory",
+    "turns": [
+      {"session": 1, "user": "Tôi thích Python."},
+      {"session": 1, "user": "Lần này bắt buộc dùng Java, gợi ý framework backend."}
+    ],
+    "checks": {
+      "with_memory_contains": ["Play Framework"],
+      "no_memory_contains": ["Spring Boot", "Quarkus"]
+    }
+  },
+  {
+    "id": "case_08",
+    "scenario": "Forget and delete memory",
+    "turns": [
+      {"session": 1, "user": "Tên tôi là Huy."},
+      {"session": 1, "user": "Hãy xóa thông tin tên của tôi khỏi memory."},
+      {"session": 2, "user": "Tôi tên gì?"}
+    ],
+    "checks": {
+      "with_memory_contains": ["không biết tên của bạn"],
+      "no_memory_contains": ["không biết tên của bạn"]
+    }
+  },
+  {
+    "id": "case_09",
+    "scenario": "Trim context with important preference retention",
+    "turns": [
+      {"session": 1, "user": "Tôi thích Python và mình đang làm rất nhiều dự án lớn với bối cảnh khá dài, hãy ghi nhớ preference chính là Python."},
+      {"session": 1, "user": "Tôi thích ngôn ngữ nào?"}
+    ],
+    "checks": {
+      "with_memory_contains": ["Python"],
+      "no_memory_contains": ["chưa có thông tin"]
+    }
+  },
+  {
+    "id": "case_10",
+    "scenario": "Semantic FAQ retrieval docker compose host",
+    "turns": [
+      {"session": 1, "user": "Khi deploy Docker Compose, tôi hay quên dùng service name."},
+      {"session": 2, "user": "Trong container thì gọi database bằng host nào?"}
+    ],
+    "checks": {
+        "with_memory_contains": ["service"],
+      "no_memory_contains": ["Mình đã hiểu"]
+    }
+  }
+]

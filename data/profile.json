@@ -1,0 +1,9 @@
+{
+  "demo_user": {
+    "name": "Huy",
+    "preferred_language": "Python",
+    "disliked_language": "Java",
+    "allergy": "đậu nành",
+    "explanation_style": "ngắn gọn, có ví dụ code"
+  }
+}
